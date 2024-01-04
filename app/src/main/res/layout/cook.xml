@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.CookActivity">
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_bg"
+        android:onClick="onNext"
+        android:text="SIGN UP"
+        android:textColor="@color/grey_100"
+        android:textStyle="bold"
+        android:translationY="-30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="640dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/editTextTextPersonName8"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Create an Account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationY="-20px" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/editTextFirstNameCook"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="30px"
+            android:textColorHint="#D6D3D3"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/editTextLastNameCook"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="30px"
+            android:textColorHint="#D6D3D3"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/editTextEmailCook"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="30px"
+            android:textColorHint="#D6D3D3"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/editTextPasswordCook"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:paddingLeft="30px"
+            android:textColorHint="#D6D3D3"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPasswordCook"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPersonName"
+            android:paddingLeft="30px"
+            android:textColorHint="#D6D3D3"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/editTextAddressCook"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:paddingLeft="30px"
+            android:textColorHint="#D6D3D3"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="@drawable/grey_unfilled_box"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter a short description about yourself"
+            android:inputType="textMultiLine"
+            android:paddingLeft="30px"
+            android:paddingTop="30px"
+            android:textColorHint="#D6D3D3"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:editable="false"
+                android:text="Attach a picture of your void cheque"
+                android:textColor="#B6B6B6"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

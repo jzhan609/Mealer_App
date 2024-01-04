@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_mealCard"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:alpha="1"
+    android:background="@drawable/cuis_background2"
+    android:backgroundTint="#F3F3F3">
+
+    <TextView
+        android:id="@+id/textViewOrderMealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="26dp"
+        android:text="Meal Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/search_textViewIngredients"
+        app:layout_constraintEnd_toStartOf="@+id/switchOffered"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchOffered"
+        android:layout_width="98dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="15dp"
+        android:text="Offered"
+        android:textColor="@color/purple_200"
+        android:textColorHighlight="@color/purple_200"
+        android:textColorLink="@color/purple_200"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/search_textViewAllergens"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewOrderMealName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/search_textViewMealDesc"
+        android:layout_width="90dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#91959A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/search_textViewIngredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search_textViewIngredients"
+        android:layout_width="90dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#91959A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/search_textViewAllergens"
+        app:layout_constraintStart_toEndOf="@+id/search_textViewMealDesc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrderMealName" />
+
+    <TextView
+        android:id="@+id/search_textViewAllergens"
+        android:layout_width="90dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#91959A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_textViewIngredients"
+        app:layout_constraintTop_toBottomOf="@+id/switchOffered" />
+
+    <Button
+        android:id="@+id/btnDeleteMeal"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/button_bg"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/search_textViewMealDesc"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOrderMealName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

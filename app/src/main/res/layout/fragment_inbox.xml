@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.InboxFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_inbox"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:autofillHints=""
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Search inbox"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColorHint="#D6D3D3"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnGenerateComplaint"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:translationX="10dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewInbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</FrameLayout>

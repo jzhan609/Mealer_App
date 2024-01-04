@@ -1,0 +1,36 @@
+package com.example.mealerapp.Domain;
+
+import com.example.mealerapp.Objects.Complaint;
+
+public class ComplaintDomain extends NotificationDomain{
+
+    public String complained_cook_id;
+    public String description;
+    public String _id;
+    public boolean isActioned = false;
+
+
+    public ComplaintDomain(String target_cook_id, String details, String id) {
+        this.complained_cook_id = target_cook_id;
+        this.description = details;
+        this._id = id;
+    }
+    public ComplaintDomain(Complaint complaint) {
+        this.complained_cook_id = complaint.getCookID();
+        this.description = complaint.getDescription();
+        this._id = complaint.getID();
+    }
+
+    public boolean getActioned() { return this.getActioned(); }
+
+    public String getId() { return this._id; }
+
+    public String get_Cook_ID() { return this.complained_cook_id; }
+
+    public String getDescription() { return this.description; }
+
+    public void setId(String id) { this._id = id; }
+
+    public void setActioned(boolean actioned) { this.isActioned = actioned; }
+
+}

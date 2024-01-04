@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewWelcome"
+                android:layout_width="358dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="Welcome back,"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationY="-40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.181" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:translationY="-30dp">
+
+
+                <SearchView
+                    android:id="@+id/search_home"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/input_bg"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@null"
+                    android:queryHint="What are you craving?"
+                     />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="127dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="158dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="160dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/grey_unfilled_box"
+                android:text="LOGOUT"
+                android:textColor="#B6B6B6"
+                android:textStyle="bold"
+                android:translationY="500dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
+                app:layout_constraintVertical_bias="0.935" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:translationY="-120dp">
+
+                <ImageView
+                    android:id="@+id/homepage_pic"
+                    android:layout_width="330dp"
+                    android:layout_height="134dp"
+                    android:layout_gravity="center"
+                    android:scaleX="4.1"
+                    android:scaleY="4.1"
+                    android:translationY="20dp"
+                    app:srcCompat="@drawable/tab_hd"
+                    tools:srcCompat="@drawable/tab_hd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="398dp"
+                android:orientation="vertical"
+                android:translationY="-90dp">
+
+                <TextView
+                    android:id="@+id/cuisines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:text="Shop by cuisine"
+                    android:textColor="@color/purple_200"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cuisine"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:paddingLeft="25dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:text="Shop by meal type"
+                    android:textColor="@color/purple_200"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mealType"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:paddingLeft="25dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
