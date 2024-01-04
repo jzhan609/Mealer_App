@@ -1,4 +1,7 @@
-Administrator Login Credentials: Email: admin@email.com Password: 123456
+A Simple "Uber Eats-Esque" application made with Java in Android Studio.
+
+Administrator Login Credentials: 
+Email: admin@email.com Password: 123456
 
 Example Accounts: 
 client1@gmail.com
@@ -13,3 +16,4 @@ You can also create new cooks and clients to test functionality. Notifcations we
 they will be sent to the logged in User so when an update is made you will not recieve it on your account thats logged in. Please refer to our services folder that contains
 our Firebase Cloud Messaging implementation (FirebaseMessagingService.java). 
 
+Made for a school project with 4 groupmates.
